@@ -75,8 +75,8 @@ class _CounterState extends State<Counter> {
             Slider(
               value: _step,
               min: 1.0,
-              max: 20.0,
-              divisions: 4,
+              max: 8.0,
+              divisions: 8,
               onChanged: _updateStep,
               label: _step.toString(),
             ),
