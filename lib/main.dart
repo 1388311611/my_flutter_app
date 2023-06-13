@@ -33,18 +33,17 @@ class _CounterState extends State<Counter> {
     });
   }
 
-  void _resetCounter() {
-    setState(() {
-      _counter = 0;
-    });
-  }
-
   void _updateStep(double value) {
     setState(() {
       _step = value;
     });
   }
 
+  void _resetCounter() {
+    setState(() {
+      _counter = 0;
+    });
+  }
   @override
   Widget build(BuildContext context) {
     return Scaffold(
@@ -76,7 +75,7 @@ class _CounterState extends State<Counter> {
               value: _step,
               min: 1.0,
               max: 8.0,
-              divisions: 8,
+              divisions: 7,
               onChanged: _updateStep,
               label: _step.toString(),
             ),
